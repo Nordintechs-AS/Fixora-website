@@ -1,0 +1,22 @@
+.homeContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    opacity: 0.6;
+}
+.workersImage {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    .homeContainer {
+        flex-direction: column;
+    }
+}
