@@ -15,6 +15,19 @@
     max-width: 500px;
     height: auto;
 }
+.offerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.offerText {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 768px) {
     .homeContainer {
         flex-direction: column;

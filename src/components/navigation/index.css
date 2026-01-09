@@ -1,6 +1,6 @@
 .navbar {
     position: absolute;
-    top: 2rem;
+    top: 0;
     left: 0;
     display: flex;
     flex-direction: row;
@@ -8,10 +8,11 @@
     justify-content: space-between;
     width: 100%;
 }
-
 .logoImage {
     width: 28px;
     height: auto;
+    margin-left: 2rem;
+    margin-top: 2rem;
 }
 .navLinks {
     display: flex;
@@ -34,6 +35,44 @@
     color: #ff007f;
     text-decoration: underline;
     text-underline-offset: 4px;
+}
+.menuButton {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navLinks {
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        background-color: #181421;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100dvh;
+    }
+    .menuButton {
+        display: block;
+        background: none;
+        border: none;
+        color: #f9e6f2;
+        font-size: 2rem;
+        margin-right: 1rem;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .navLink {
+        font-size: 2.5rem;
+        padding-left: 2rem;
+    }
+    .navLink:first-child {
+        margin-top: 6rem;
+    }
+    .logoImage {
+        margin-left: 1rem;
+    }
 }
 
 @media (prefers-color-scheme: light) {
