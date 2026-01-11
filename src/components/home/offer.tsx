@@ -7,7 +7,14 @@ export function Offer() {
                 Vil du være en av det første som utnytter Fixora? eller er du en
                 bedrift som ønsker å tilby tjenester?
             </p>
-            <Button content="Forhånd bestill nå" link="" outline={false} />
+            <div className="offerActions">
+                <input
+                    type="email"
+                    placeholder="Din epost adresse"
+                    className="inputField"
+                />
+                <Button content="Forhånd bestill nå" link="" outline={true} />
+            </div>
         </div>
     );
 }

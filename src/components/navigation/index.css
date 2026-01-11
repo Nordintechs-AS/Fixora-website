@@ -26,15 +26,24 @@
     font-weight: 500;
     font-size: 1rem;
     color: #f9e6f2;
-    transition: color 0.3s ease;
+    position: relative;
+    background: linear-gradient(to right, #ff007f 50%, #f9e6f2 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 0.4s ease;
 }
 .navLink:hover {
-    color: #ff007f;
+    background-position: left;
 }
 .navLink.active {
-    color: #ff007f;
-    text-decoration: underline;
-    text-underline-offset: 4px;
+    background: #ff007f;
+    font-weight: 900;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .menuButton {
     display: none;

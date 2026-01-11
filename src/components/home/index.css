@@ -3,33 +3,51 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    gap: 1.5rem;
-}
-.subtitle {
-    font-size: 1.25rem;
-    font-weight: 400;
-    opacity: 0.6;
 }
 .workersImage {
     width: 100%;
     max-width: 500px;
     height: auto;
+    margin-bottom: 4rem;
 }
 .offerContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+.offerActions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
+    width: 100%;
 }
 .offerText {
     font-size: 1.125rem;
     font-weight: 500;
     margin-bottom: 1rem;
+    opacity: 0.85;
 }
-
+.inputField {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ff007f;
+    border-radius: 14rem;
+    outline: none;
+    width: 100%;
+    max-width: 300px;
+    background-color: transparent;
+}
 @media screen and (max-width: 768px) {
     .homeContainer {
         flex-direction: column;
+    }
+    .workersImage {
+        width: 80%;
+        margin-bottom: 2rem;
     }
 }
