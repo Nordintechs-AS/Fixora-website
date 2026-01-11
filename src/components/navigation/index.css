@@ -7,6 +7,7 @@
     align-items: flex-end;
     justify-content: space-between;
     width: 100%;
+    z-index: 1000;
 }
 .logoImage {
     width: 28px;

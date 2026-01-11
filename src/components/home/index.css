@@ -2,14 +2,37 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: hidden;
 }
-.workersImage {
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.imagesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -10;
     width: 100%;
-    max-width: 500px;
-    height: auto;
-    margin-bottom: 4rem;
+    height: 34rem;
+    max-width: 14rem;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    overflow-y: hidden;
 }
+.appImages {
+    position: absolute;
+    width: 100%;
+    max-width: 14rem;
+    transform-origin: bottom left;
+    overflow-y: hidden;
+}
+
 .offerContainer {
     display: flex;
     flex-direction: column;
@@ -22,7 +45,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
     width: 100%;
 }
@@ -42,12 +65,26 @@
     max-width: 300px;
     background-color: transparent;
 }
+@media screen and (max-width: 1022px) {
+    .imagesContainer {
+        display: none;
+    }
+}
 @media screen and (max-width: 768px) {
     .homeContainer {
         flex-direction: column;
+        padding: 1rem;
+        height: auto;
+        overflow-y: hidden;
+    }
+    .textContainer {
+        height: 100%;
     }
     .workersImage {
         width: 80%;
         margin-bottom: 2rem;
+    }
+    .imagesContainer {
+        display: none;
     }
 }

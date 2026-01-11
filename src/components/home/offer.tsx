@@ -13,7 +13,7 @@ export function Offer() {
                     placeholder="Din epost adresse"
                     className="inputField"
                 />
-                <Button content="Forhånd bestill nå" link="" outline={true} />
+                <Button content="Bestill" link="" outline={true} />
             </div>
         </div>
     );
