@@ -4,16 +4,22 @@ import { Button } from "../golbal/button";
 import { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import { useUserTypeStore, type UserType } from "../../store/userTypeStore";
+import { useTranslation } from "react-i18next";
 
 export function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { userType, setUserType } = useUserTypeStore();
+    const { t, i18n } = useTranslation();
     const indicatorRef = useRef<HTMLDivElement>(null);
     const privatButtonRef = useRef<HTMLButtonElement>(null);
     const bedriftButtonRef = useRef<HTMLButtonElement>(null);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    const changeLanguage = (lng: string) => {
+        i18n.changeLanguage(lng);
     };
 
     useEffect(() => {
@@ -51,7 +57,7 @@ export function Navbar() {
                     }`}
                     onClick={() => handleButtonClick("privat")}
                 >
-                    privat
+                    {t("nav.userType.privat")}
                 </button>
                 <button
                     ref={bedriftButtonRef}
@@ -60,12 +66,12 @@ export function Navbar() {
                     }`}
                     onClick={() => handleButtonClick("bedrift")}
                 >
-                    bedrift
+                    {t("nav.userType.bedrift")}
                 </button>
             </div>
             <button
                 className="menuButton"
-                aria-label="Menu"
+                aria-label={t("nav.menuLabel")}
                 onClick={toggleMenu}
             >
                 <span>&#9776;</span>
@@ -75,20 +81,40 @@ export function Navbar() {
                 style={{ display: isMenuOpen ? "flex" : "" }}
             >
                 <NavLink to="/" className="navLink">
-                    Home
+                    {t("nav.home")}
                 </NavLink>
                 <NavLink to="/about" className="navLink">
-                    About
+                    {t("nav.about")}
                 </NavLink>
                 <NavLink to="/contact" className="navLink">
-                    Contact
+                    {t("nav.contact")}
                 </NavLink>
+                <div className="languageSwitcher">
+                    <button
+                        onClick={() => changeLanguage("no")}
+                        className={`langButton ${
+                            i18n.language === "no" ? "active" : ""
+                        }`}
+                    >
+                        NO
+                    </button>
+                    <button
+                        onClick={() => changeLanguage("en")}
+                        className={`langButton ${
+                            i18n.language === "en" ? "active" : ""
+                        }`}
+                    >
+                        EN
+                    </button>
+                </div>
                 {!isMenuOpen && (
-                    <Button
-                        content="Forhåndsbestill nå"
-                        outline={true}
-                        link="/"
-                    />
+                    <>
+                        <Button
+                            content={t("nav.preorderButton")}
+                            outline={true}
+                            link="/"
+                        />
+                    </>
                 )}
             </div>
         </nav>

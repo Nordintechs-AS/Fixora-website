@@ -1,0 +1,109 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Price",
+        "preorderButton": "Pre-order now",
+        "menuLabel": "Menu",
+        "userType": {
+            "privat": "private",
+            "bedrift": "business"
+        }
+    },
+    "home": {
+        "privat": {
+            "title": "Get what you need fixed, easily and quickly",
+            "subtitle": "Order services directly from the app, view the craftsman's profile and ratings, and pay securely through the platform. Be one of the first to try our new app!",
+            "benefits": {
+                "inspections": {
+                    "title": "Cost-effective inspections",
+                    "description": "Save time, money and stress by detecting problems early with our advanced scanning technology."
+                },
+                "history": {
+                    "title": "Property history",
+                    "description": "Keep track of all repairs and maintenance in your home in one place."
+                },
+                "transparent": {
+                    "title": "No hidden costs",
+                    "description": "Transparent prices with no hidden costs. Order and pay easily via the app."
+                }
+            }
+        },
+        "bedrift": {
+            "title": "Your new digital partner for more jobs",
+            "subtitle": "Like 'Uber for handymen' get access to more assignments, fixed hourly rates, and plan your entire week with our simple and intuitive app. Be first and sign up now",
+            "benefits": {
+                "jobs": {
+                    "title": "More jobs every month",
+                    "description": "Get access to a large network of customers who need your services."
+                },
+                "admin": {
+                    "title": "Less administration",
+                    "description": "Automatic invoicing and payment allows you to focus on your work."
+                },
+                "payment": {
+                    "title": "Faster payment",
+                    "description": "Get paid faster with automatic invoicing and payment."
+                }
+            }
+        }
+    },
+    "offer": {
+        "emailPlaceholder": "Your email address",
+        "button": "Pre-order now"
+    },
+    "about": {
+        "privat": {
+            "title": "About Fixora",
+            "toc": "Contents",
+            "sections": {
+                "whatIs": {
+                    "title": "What is Fixora?",
+                    "content": "Fixora makes it easy to keep track of your properties in one place. Whether you own your home, a vacation property or a rental property, Fixora helps you organize everything you need to know about your properties—all accessible from your phone or computer."
+                },
+                "why": {
+                    "title": "Why Fixora Exists",
+                    "content": "It's harder than it should be to keep important property information organized. Documents end up in different folders, pictures are scattered across your phone, and it takes forever to find specifications when you need them. Fixora brings it all together so you can stop searching and start managing."
+                },
+                "whatWeDo": {
+                    "title": "What We Do",
+                    "content": "Keep Everything in One Place\nStore all your property details—addresses, number of rooms, square footage, valuations—in one organized location. No more digging through files or hunting for documents.\n\nOrganize Your Documents\nPhotos, inspection reports, warranty brochures and contracts belong together. Upload them once, access them anytime. It's like having a digital filing cabinet that fits in your pocket.\n\nSee Your Properties on a Map\nVisualize your properties with integrated mapping. Whether you're selling, renting or just keeping records, see everything at a glance.\n\nAccess Anytime, Anywhere\nUse Fixora on your phone when you're on the go, or on your computer when you want a larger view. Your property information is always there when you need it."
+                },
+                "whoWeServe": {
+                    "title": "Who We Serve",
+                    "content": "Homeowners, property investors and anyone who wants to keep their property information organized and accessible. If you own property and want to stop managing files and start managing smarter, Fixora is for you."
+                },
+                "approach": {
+                    "title": "Our Approach",
+                    "content": "We keep it simple. No complicated features you don't need. Just simple tools that help you organize your properties and find what you need instantly.\n\nAvailable on iOS, Android and Web."
+                }
+            }
+        },
+        "bedrift": {
+            "title": "About Fixora",
+            "toc": "Contents",
+            "sections": {
+                "whatIs": {
+                    "title": "What is Fixora?",
+                    "content": "Fixora is a comprehensive property management platform designed for real estate agents, property managers and business owners. We simplify the way you manage, document and present your property portfolio with modern tools built for efficiency."
+                },
+                "why": {
+                    "title": "Why Fixora Exists",
+                    "content": "Managing multiple properties across different locations is complex. Spreadsheets become outdated, documents are spread across devices, and presenting properties to stakeholders takes too long. Fixora solves this by centralizing all your property information on one accessible, secure platform."
+                },
+                "whatWeDo": {
+                    "title": "What We Do",
+                    "content": "Centralized Property Management\nKeep all property details in one place. Store addresses, specifications, valuations and documents without switching between multiple tools. Every team member stays synchronized with real-time updates.\n\nProfessional Documentation\nUpload and organize property documents, certificates, inspection reports and contracts. Never lose important files again, and share them instantly with colleagues and clients.\n\nLocation Intelligence\nIntegrated mapping shows property locations with precise details. Present properties professionally to investors, lenders and partners with visual context that matters.\n\nBuilt for Teams\nManage properties across your organization. Multiple users can access, update and collaborate on property portfolios based on their roles and permissions."
+                },
+                "whoWeServe": {
+                    "title": "Who We Serve",
+                    "content": "Real estate brokerage offices, property management companies, investment firms and portfolio owners who need reliable tools to manage properties at scale."
+                },
+                "approach": {
+                    "title": "Our Approach",
+                    "content": "We believe property management should be simple, not complicated. Fixora removes administrative friction so you can focus on what matters: growing your business and serving your customers better.\n\nAvailable on iOS, Android and Web—work anywhere."
+                }
+            }
+        }
+    }
+}

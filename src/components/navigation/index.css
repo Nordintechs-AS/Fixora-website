@@ -4,15 +4,10 @@
     left: 0;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     z-index: 1000;
-}
-.logoImage {
-    width: 28px;
-    height: auto;
-    margin-left: 2rem;
 }
 .navLinks {
     display: flex;
@@ -25,21 +20,24 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
-    color: #f9e6f2;
+    color: var(--color-text-primary);
     position: relative;
-    background: linear-gradient(to right, #ff007f 50%, #f9e6f2 50%);
+    background: linear-gradient(
+        to right,
+        var(--color-primary) 50%,
+        var(--color-text-primary) 50%
+    );
     background-size: 200% 100%;
     background-position: right;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: background-position 0.4s ease;
 }
 .navLink:hover {
     background-position: left;
 }
 .navLink.active {
-    background: #ff007f;
+    background: var(--color-primary);
     font-weight: 900;
     background-clip: text;
     -webkit-background-clip: text;
@@ -49,49 +47,81 @@
     display: none;
 }
 .userTypeButtons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background-color: rgba(249, 230, 242, 0.1);
-    border-radius: 100px;
+    gap: 0.5rem;
+    background-color: var(--color-overlay-light);
+    border-radius: 12rem;
     padding: 0.25rem;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1rem);
     margin-left: 1rem;
 }
-.userTypeButtonIndicator {
-    position: absolute;
-    top: 0.25rem;
-    left: 0.25rem;
-    height: calc(100% - 0.5rem);
-    background: linear-gradient(135deg, #ff007f, #ff4da6);
-    border-radius: 100px;
-    z-index: 0;
-}
+
 .userTypeButton {
-    padding: 0.5rem 1.5rem;
-    border-radius: 100px;
-    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 12rem;
+    font-size: 0.875rem;
     cursor: pointer;
     border: none;
     background: transparent;
-    color: #f9e6f2;
+    color: var(--color-text-primary);
     font-weight: 500;
-    transition: color 0.3s ease;
-    z-index: 1;
-    position: relative;
+    transition: all 0.3s ease;
 }
+
+.userTypeButton:hover {
+    background-color: var(--color-overlay-hover);
+}
+
+.userTypeButton.active {
+    background: var(--color-gradient-primary);
+    color: var(--color-white);
+}
+
 .userTypeButton:focus {
     outline: none;
 }
 
-@media screen and (max-width: 600px) {
+.languageSwitcher {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--color-overlay-light);
+    border-radius: 100px;
+    padding: 0.25rem;
+    backdrop-filter: blur(10px);
+}
+
+.langButton {
+    padding: 0.4rem 1rem;
+    border-radius: 100px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: var(--color-text-primary);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.langButton:hover {
+    background-color: var(--color-overlay-hover);
+}
+
+.langButton.active {
+    background: var(--color-gradient-primary);
+    color: var(--color-white);
+}
+
+.langButton:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 770px) {
     .navLinks {
         display: none;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: flex-start;
-        background-color: #181421;
+        background-color: var(--color-bg-primary);
         position: absolute;
         top: 0;
         left: 0;
@@ -102,7 +132,7 @@
         display: block;
         background: none;
         border: none;
-        color: #f9e6f2;
+        color: var(--color-text-primary);
         font-size: 2rem;
         margin-right: 1rem;
         cursor: pointer;
@@ -122,6 +152,6 @@
 
 @media (prefers-color-scheme: light) {
     .navLink {
-        color: #0b0914;
+        color: var(--color-text-primary);
     }
 }

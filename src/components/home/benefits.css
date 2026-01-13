@@ -11,7 +11,7 @@
 }
 
 .benefitBox {
-    border: 1px solid #f0f0f0;
+    border: 1px solid var(--color-border);
     border-radius: 1rem;
     padding: 1rem 2rem;
     text-align: center;
@@ -33,7 +33,7 @@
 .benefitIcon > * {
     width: 1.8rem;
     height: 1.8rem;
-    color: #ff007f;
+    color: var(--color-primary);
     margin: 0.5rem 0;
 }
 @media (max-width: 768px) {

@@ -45,14 +45,16 @@
     text-align: center;
 }
 .inputField {
-    padding: 0.75rem 1rem;
+    height: 2.5rem;
+    padding: 0 1rem;
     font-size: 1rem;
-    border: 2px solid #ff007f;
+    border: 2px solid var(--color-primary);
     border-radius: 14rem;
     outline: none;
     width: 100%;
     max-width: 300px;
     background-color: transparent;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 768px) {

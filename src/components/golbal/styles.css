@@ -1,30 +1,65 @@
 .button {
     min-width: fit-content;
-    background-color: #e63980;
-    color: white;
-    padding: 0.75rem 1rem;
+    background-color: transparent;
+    color: var(--color-white);
+    height: 2.5rem;
+    padding: 0 1rem;
     border-radius: 500px;
     cursor: pointer;
     font-size: 16px;
     border: none;
-    border: 2px solid #e63980;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease;
+    box-sizing: border-box;
 }
+
+.button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--color-button);
+    border-radius: 500px;
+    z-index: -2;
+}
+
+.button-shadow {
+    position: absolute;
+    inset: -1rem;
+    border-radius: 12rem;
+    background: conic-gradient(
+        from 0deg,
+        transparent 0deg,
+        transparent 60deg,
+        rgb(112, 0, 106) 0deg,
+        rgba(6, 0, 6, 0.9) 40deg,
+        rgba(250, 0, 237, 0.88) 180deg,
+        transparent 180deg,
+        transparent 360deg
+    );
+    pointer-events: none;
+    z-index: -1;
+    filter: blur(2rem);
+}
+
 .buttonOutline {
     min-width: fit-content;
-    border: 2px solid #e63980;
-    color: white;
-    padding: 0.75rem 1rem;
+    border: 2px solid var(--color-button);
+    color: var(--color-white);
+    height: 2.5rem;
+    padding: 0 1rem;
     border-radius: 500px;
     cursor: pointer;
     font-size: 16px;
     background-color: transparent;
+    transition: 0.4s ease;
+    box-sizing: border-box;
 }
 .button:hover {
-    background-color: #eee;
-    color: #000;
-    border: 2px solid #eee;
+    color: var(--color-bg-primary);
+    background-color: var(--color-white);
 }
 .buttonOutline:hover {
-    background-color: #e63980;
-    color: white;
+    background-color: var(--color-button);
+    color: var(--color-white);
 }

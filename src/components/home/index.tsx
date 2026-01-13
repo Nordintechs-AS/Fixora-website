@@ -14,10 +14,12 @@ import {
     FaBolt,
     FaCreditCard,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export function Home() {
     const imageRefs = useRef<(HTMLImageElement | null)[]>([]);
     const { userType } = useUserTypeStore();
+    const { t } = useTranslation();
 
     useEffect(() => {
         const images = imageRefs.current.filter(Boolean);
@@ -57,51 +59,43 @@ export function Home() {
         }
     > = {
         privat: {
-            title: "Få fikset det du trenger, enkelt og raskt",
-            underTitle:
-                "Bestill tjenester direkte fra appen, se håndverkerens profil og vurderinger, og betal trygt gjennom plattformen. Vær en av de første til å prøve vår nye app!",
+            title: t('home.privat.title'),
+            underTitle: t('home.privat.subtitle'),
             benefits: [
                 {
-                    title: "Lønnsomme inspeksjoner",
-                    description:
-                        "Spar tid, penger og stree ved å oppdage problemer tidlig med vår avanserte skanneteknologi.",
+                    title: t('home.privat.benefits.inspections.title'),
+                    description: t('home.privat.benefits.inspections.description'),
                     icon: <FaSearch />,
                 },
                 {
-                    title: "Bolig historikken",
-                    description:
-                        "Hold oversikt over alle reparasjoner og vedlikehold i din bolig på ett sted.",
+                    title: t('home.privat.benefits.history.title'),
+                    description: t('home.privat.benefits.history.description'),
                     icon: <FaClipboardList />,
                 },
                 {
-                    title: "Ingen i sjul",
-                    description:
-                        "Transparente priser uten skjulte kostnader. Bestill og betal enkelt via appen.",
+                    title: t('home.privat.benefits.transparent.title'),
+                    description: t('home.privat.benefits.transparent.description'),
                     icon: <FaDollarSign />,
                 },
             ],
         },
         bedrift: {
-            title: "Din nye digitale partner for flere jobber",
-            underTitle:
-                "Som 'Uber for håndverkere' få tilgang til flere oppdrag, fast timepriser, og planlegg hele uken din med vår enkle og intuitive Appen. Vær først og meld deg nå",
+            title: t('home.bedrift.title'),
+            underTitle: t('home.bedrift.subtitle'),
             benefits: [
                 {
-                    title: "Flere jobber hver måned",
-                    description:
-                        "Få tilgang til et stort nettverk av kunder som trenger dine tjenester.",
+                    title: t('home.bedrift.benefits.jobs.title'),
+                    description: t('home.bedrift.benefits.jobs.description'),
                     icon: <FaChartLine />,
                 },
                 {
-                    title: "Mindre administrasjon",
-                    description:
-                        "Automatisk fakturering og betaling gjør at du kan fokusere på jobben din.",
+                    title: t('home.bedrift.benefits.admin.title'),
+                    description: t('home.bedrift.benefits.admin.description'),
                     icon: <FaBolt />,
                 },
                 {
-                    title: "Raskere betaling",
-                    description:
-                        "Få betalt raskere med automatisk fakturering og betaling.",
+                    title: t('home.bedrift.benefits.payment.title'),
+                    description: t('home.bedrift.benefits.payment.description'),
                     icon: <FaCreditCard />,
                 },
             ],
