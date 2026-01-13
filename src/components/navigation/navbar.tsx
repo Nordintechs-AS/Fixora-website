@@ -1,5 +1,4 @@
 import "./index.css";
-import fixoraLogo from "../../assets/logo.svg";
 import { NavLink } from "react-router-dom";
 import { Button } from "../golbal/button";
 import { useState, useRef, useEffect } from "react";
