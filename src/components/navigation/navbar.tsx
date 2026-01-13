@@ -45,36 +45,49 @@ export function Navbar() {
 
     return (
         <nav className="navbar">
-            <div className="userTypeButtons">
-                <div
-                    className="userTypeButtonIndicator"
-                    ref={indicatorRef}
-                ></div>
+            <div className="navLeftSection">
                 <button
-                    ref={privatButtonRef}
-                    className={`userTypeButton ${
-                        userType === "privat" ? "active" : ""
-                    }`}
-                    onClick={() => handleButtonClick("privat")}
+                    className="languageSwitcher"
+                    onClick={() =>
+                        changeLanguage(i18n.language === "no" ? "en" : "no")
+                    }
+                    aria-label={t("nav.languageToggle")}
                 >
-                    {t("nav.userType.privat")}
+                    {i18n.language === "no" ? "NO" : "EN"}
                 </button>
-                <button
-                    ref={bedriftButtonRef}
-                    className={`userTypeButton ${
-                        userType === "bedrift" ? "active" : ""
-                    }`}
-                    onClick={() => handleButtonClick("bedrift")}
-                >
-                    {t("nav.userType.bedrift")}
-                </button>
+                <div className="userTypeButtons">
+                    <div
+                        className="userTypeButtonIndicator"
+                        ref={indicatorRef}
+                    ></div>
+                    <button
+                        ref={privatButtonRef}
+                        className={`userTypeButton ${
+                            userType === "privat" ? "active" : ""
+                        }`}
+                        onClick={() => handleButtonClick("privat")}
+                    >
+                        {t("nav.userType.privat")}
+                    </button>
+                    <button
+                        ref={bedriftButtonRef}
+                        className={`userTypeButton ${
+                            userType === "bedrift" ? "active" : ""
+                        }`}
+                        onClick={() => handleButtonClick("bedrift")}
+                    >
+                        {t("nav.userType.bedrift")}
+                    </button>
+                </div>
             </div>
             <button
-                className="menuButton"
+                className={`menuButton ${isMenuOpen ? "open" : ""}`}
                 aria-label={t("nav.menuLabel")}
                 onClick={toggleMenu}
             >
-                <span>&#9776;</span>
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
             <div
                 className="navLinks"
@@ -89,24 +102,6 @@ export function Navbar() {
                 <NavLink to="/contact" className="navLink">
                     {t("nav.contact")}
                 </NavLink>
-                <div className="languageSwitcher">
-                    <button
-                        onClick={() => changeLanguage("no")}
-                        className={`langButton ${
-                            i18n.language === "no" ? "active" : ""
-                        }`}
-                    >
-                        NO
-                    </button>
-                    <button
-                        onClick={() => changeLanguage("en")}
-                        className={`langButton ${
-                            i18n.language === "en" ? "active" : ""
-                        }`}
-                    >
-                        EN
-                    </button>
-                </div>
                 {!isMenuOpen && (
                     <>
                         <Button
