@@ -105,5 +105,25 @@
                 }
             }
         }
+    },
+    "price": {
+        "title": "Pricing",
+        "subtitle": "Be one of our first 300 customers and get exclusive access to our special prices. This offer is only available for a limited time.",
+        "plans": {
+            "price": "Just for the first 300 customers",
+            "tjenester": "Services included in subscription",
+            "description": "Get access to more assignments and manage your business efficiently with our pricing plans tailored for all businesses.",
+            "before": "Pre-order price",
+            "priceBefore": "NOK 1499",
+            "after": "After launch",
+            "priceAfter": "NOK 3499",
+            "features": [
+                "Unlimited employees get craftsman profiles",
+                "6 months priority visibility",
+                "Inspection reports",
+                "Fixed prices forever",
+                "Superior customer support"
+            ]
+        }
     }
 }

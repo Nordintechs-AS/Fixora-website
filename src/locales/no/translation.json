@@ -105,5 +105,25 @@
                 }
             }
         }
+    },
+    "price": {
+        "title": "Prising",
+        "subtitle": "Vær en av våre første 300 kunde og få eksklusiv tilgang til våre spesialpriser. Dette tilbudet er kun tilgjengelig for en begrenset periode.",
+        "plans": {
+            "price": "Kun for de første 300 kundene",
+            "tjenester": "Tjenester inkludert i abbonementet",
+            "description": "Få tilgang til flere oppdrag og administrer virksomheten din effektivt med våre prisplaner skreddersydd for alle bedrifter.",
+            "before": "Forhåndsbestillingspris",
+            "priceBefore": "NOK 1499",
+            "after": "Etter lansering",
+            "priceAfter": "NOK 3499",
+            "features": [
+                "Ubegrenset ansatte får håndverkerprofiler",
+                "6 måneder prioritert synlighet",
+                "Inspeksjonsrapporter",
+                "Fast priser for altid",
+                "Superior kundestøtte"
+            ]
+        }
     }
 }

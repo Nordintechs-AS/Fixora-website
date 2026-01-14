@@ -1,0 +1,188 @@
+.priceContainer {
+    max-width: 800px;
+    margin: 10rem auto 4rem;
+    padding: 0 2rem;
+}
+
+.priceTitle {
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.priceSubtitle {
+    font-size: 1.1rem;
+    text-align: center;
+    opacity: 0.6;
+    margin-bottom: 3.5rem;
+    line-height: 1.6;
+}
+
+.pricingCard {
+    border-radius: 1.5rem;
+    padding: 3rem;
+    background: linear-gradient(
+        350deg,
+        var(--color-overlay-light) 0%,
+        transparent 40%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(1rem);
+}
+
+.planTitle {
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+.planDescription {
+    font-size: 0.95rem;
+    opacity: 0.55;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+}
+
+.priceOptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.priceOption {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: var(--color-background);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.priceOption.highlighted {
+    color: var(--color-text-primary);
+}
+
+.priceOption.highlighted .priceAmount {
+    color: var(--color-text-primary);
+}
+
+.priceLabel {
+    font-size: 0.85rem;
+    font-weight: 500;
+    opacity: 0.6;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.priceAmount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+}
+
+.after {
+    text-decoration: line-through;
+}
+.before {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+.featuresSection {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.featuresTitle {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    opacity: 0.45;
+}
+
+.featuresList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.featureItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    opacity: 0.85;
+}
+
+.featureCheck {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary);
+    color: var(--color-text-primary);
+    border-radius: 0.375rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .priceContainer {
+        margin-top: 14rem;
+        padding: 0 1.25rem;
+    }
+
+    .priceTitle {
+        font-size: 2rem;
+    }
+
+    .priceSubtitle {
+        font-size: 0.95rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .pricingCard {
+        padding: 2rem 1.5rem;
+        border-radius: 1.25rem;
+    }
+
+    .planTitle {
+        font-size: 1.2rem;
+    }
+
+    .planDescription {
+        font-size: 0.9rem;
+    }
+
+    .priceOptions {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .priceOption {
+        padding: 1.25rem;
+    }
+
+    .priceAmount {
+        font-size: 1rem;
+    }
+
+    .featureItem {
+        font-size: 0.95rem;
+    }
+
+    .featureCheck {
+        width: 1.1rem;
+        height: 1.1rem;
+        font-size: 0.6rem;
+    }
+}
