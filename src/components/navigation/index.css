@@ -123,6 +123,48 @@
     transform: scale(0.95);
 }
 
+.languageDropdown {
+    position: relative;
+}
+
+.languageDropdownMenu {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    background-color: var(--color-bg-secondary, rgba(30, 30, 30, 0.95));
+    backdrop-filter: blur(10px);
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 7rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1002;
+}
+
+.languageOption {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: transparent;
+    color: var(--color-text-primary);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.languageOption:hover {
+    background-color: var(--color-overlay-hover, rgba(255, 255, 255, 0.1));
+}
+
+.languageOption.active {
+    background: var(--color-gradient-primary);
+    color: var(--color-white);
+}
+
 @media screen and (max-width: 770px) {
     .navLinks {
         display: none;

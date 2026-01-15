@@ -1,5 +1,5 @@
 import "./index.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { Button } from "../golbal/button";
 import { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
@@ -9,17 +9,15 @@ import { useTranslation } from "react-i18next";
 export function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { userType, setUserType } = useUserTypeStore();
-    const { t, i18n } = useTranslation();
+    const location = useLocation();
+    const isPricePage = location.pathname === "/price";
+    const { t } = useTranslation();
     const indicatorRef = useRef<HTMLDivElement>(null);
     const privatButtonRef = useRef<HTMLButtonElement>(null);
     const bedriftButtonRef = useRef<HTMLButtonElement>(null);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
-    };
-
-    const changeLanguage = (lng: string) => {
-        i18n.changeLanguage(lng);
     };
 
     useEffect(() => {
@@ -46,39 +44,32 @@ export function Navbar() {
     return (
         <nav className="navbar">
             <div className="navLeftSection">
-                <button
-                    className="languageSwitcher"
-                    onClick={() =>
-                        changeLanguage(i18n.language === "no" ? "en" : "no")
-                    }
-                    aria-label={t("nav.languageToggle")}
-                >
-                    {i18n.language === "no" ? "NO" : "EN"}
-                </button>
-                <div className="userTypeButtons">
-                    <div
-                        className="userTypeButtonIndicator"
-                        ref={indicatorRef}
-                    ></div>
-                    <button
-                        ref={privatButtonRef}
-                        className={`userTypeButton ${
-                            userType === "privat" ? "active" : ""
-                        }`}
-                        onClick={() => handleButtonClick("privat")}
-                    >
-                        {t("nav.userType.privat")}
-                    </button>
-                    <button
-                        ref={bedriftButtonRef}
-                        className={`userTypeButton ${
-                            userType === "bedrift" ? "active" : ""
-                        }`}
-                        onClick={() => handleButtonClick("bedrift")}
-                    >
-                        {t("nav.userType.bedrift")}
-                    </button>
-                </div>
+                {!isPricePage && (
+                    <div className="userTypeButtons">
+                        <div
+                            className="userTypeButtonIndicator"
+                            ref={indicatorRef}
+                        ></div>
+                        <button
+                            ref={privatButtonRef}
+                            className={`userTypeButton ${
+                                userType === "privat" ? "active" : ""
+                            }`}
+                            onClick={() => handleButtonClick("privat")}
+                        >
+                            {t("nav.userType.privat")}
+                        </button>
+                        <button
+                            ref={bedriftButtonRef}
+                            className={`userTypeButton ${
+                                userType === "bedrift" ? "active" : ""
+                            }`}
+                            onClick={() => handleButtonClick("bedrift")}
+                        >
+                            {t("nav.userType.bedrift")}
+                        </button>
+                    </div>
+                )}
             </div>
             <button
                 className={`menuButton ${isMenuOpen ? "open" : ""}`}
@@ -99,9 +90,11 @@ export function Navbar() {
                 <NavLink to="/about" className="navLink">
                     {t("nav.about")}
                 </NavLink>
-                <NavLink to="/contact" className="navLink">
-                    {t("nav.contact")}
-                </NavLink>
+                {userType === "bedrift" && (
+                    <NavLink to="/price" className="navLink">
+                        {t("nav.price")}
+                    </NavLink>
+                )}
                 {!isMenuOpen && (
                     <>
                         <Button

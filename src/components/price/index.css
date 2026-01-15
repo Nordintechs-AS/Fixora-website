@@ -1,7 +1,7 @@
 .priceContainer {
-    max-width: 800px;
     margin: 10rem auto 4rem;
     padding: 0 2rem;
+    width: min(90rem, 100%);
 }
 
 .priceTitle {

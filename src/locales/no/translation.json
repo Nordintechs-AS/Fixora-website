@@ -1,56 +1,56 @@
 {
     "nav": {
         "home": "Hjem",
-        "about": "Om oss",
-        "contact": "Pris",
-        "preorderButton": "Forhåndsbestill nå",
-        "menuLabel": "Meny",
+        "about": "Om Oss",
+        "price": "Prising",
+        "preorderButton": "Forhåndsbestill",
+        "menuLabel": "Menu",
         "userType": {
-            "privat": "privat",
-            "bedrift": "bedrift"
+            "privat": "For Huseiere",
+            "bedrift": "For Håndverkere"
         }
     },
     "home": {
         "privat": {
-            "title": "Få fikset det du trenger, enkelt og raskt",
-            "subtitle": "Bestill tjenester direkte fra appen, se håndverkerens profil og vurderinger, og betal trygt gjennom plattformen. Vær en av de første til å prøve vår nye app!",
+            "title": "Stopp skaden før den koster deg dyrt",
+            "subtitle": "Bruk mobilen til å sikre hjemmet ditt. Fixora identifiserer risiko for brann, vannskader og tekniske feil – før de blir et problem.",
             "benefits": {
                 "inspections": {
-                    "title": "Lønnsomme inspeksjoner",
-                    "description": "Spar tid, penger og stree ved å oppdage problemer tidlig med vår avanserte skanneteknologi."
+                    "title": "Forebygg i tide",
+                    "description": "Oppdag skjulte feil og mangler før de utvikler seg til kostbare storskader."
                 },
                 "history": {
-                    "title": "Bolig historikken",
-                    "description": "Hold oversikt over alle reparasjoner og vedlikehold i din bolig på ett sted."
+                    "title": "Full kontroll",
+                    "description": "Alle funn, bilder og tilstandsrapporter samlet på ett trygt sted."
                 },
                 "transparent": {
-                    "title": "Ingen i sjul",
-                    "description": "Transparente priser uten skjulte kostnader. Bestill og betal enkelt via appen."
+                    "title": "Enkel oversikt",
+                    "description": "Få klare svar på hva som er galt, hva det vil koste å fikse, og hva du bør gjøre nå."
                 }
             }
         },
         "bedrift": {
-            "title": "Din nye digitale partner for flere jobber",
-            "subtitle": "Som 'Uber for håndverkere' få tilgang til flere oppdrag, fast timepriser, og planlegg hele uken din med vår enkle og intuitive Appen. Vær først og meld deg nå",
+            "title": "Flere relevante oppdrag. Mindre tidstap.",
+            "subtitle": "Vi digitaliserer inspeksjonsprosessen. Få ferdig dokumenterte jobber rett i lomma – helt uten unødvendige befaringer.",
             "benefits": {
                 "jobs": {
-                    "title": "Flere jobber hver måned",
-                    "description": "Få tilgang til et stort nettverk av kunder som trenger dine tjenester."
+                    "title": "Kvalifiserte oppdrag",
+                    "description": "Få tilgang til kunder med dokumenterte behov som er klare til å bestille."
                 },
                 "admin": {
-                    "title": "Mindre administrasjon",
-                    "description": "Automatisk fakturering og betaling gjør at du kan fokusere på jobben din."
+                    "title": "Sømløs flyt",
+                    "description": "Alt av bilder, rapporter og underlag ligger klart. Bruk tiden din på faget, ikke papirarbeid."
                 },
                 "payment": {
-                    "title": "Raskere betaling",
-                    "description": "Få betalt raskere med automatisk fakturering og betaling."
+                    "title": "Raskere oppgjør",
+                    "description": "Kortere vei fra identifisert behov til utført jobb og utbetaling."
                 }
             }
         }
     },
     "offer": {
-        "emailPlaceholder": "Din epost adresse",
-        "button": "Forhåndsbestill nå"
+        "emailPlaceholder": "Skriv inn din e-postadresse",
+        "button": "Forhåndsbestill"
     },
     "about": {
         "privat": {
@@ -59,23 +59,19 @@
             "sections": {
                 "whatIs": {
                     "title": "Hva er Fixora?",
-                    "content": "Fixora gjør det enkelt å holde styr på eiendomsene dine på ett sted. Enten du eier boligen din, en ferieeiendom eller en utleieeiendom, hjelper Fixora deg med å organisere alt du trenger å vite om eiendomsene dine—alt tilgjengelig fra telefonen eller datamaskinen din."
+                    "content": "Fixora er din digitale boliginspektør."
                 },
                 "why": {
-                    "title": "Hvorfor Fixora Finnes",
-                    "content": "Det er vanskeligere enn det burde være å holde viktig eiendomsinformasjon organisert. Dokumenter ender opp i ulike mapper, bilder er spredt over telefonen din, og det tar evigheter å finne spesifikasjoner når du trenger dem. Fixora bringer det hele sammen slik at du kan slutte å søke og begynne å administrere."
+                    "title": "Hvorfor Fixora?",
+                    "content": "De fleste store boligskader starter som små feil. Vi hjelper deg å se det som er usynlig for det utrente øye, slik at du kan sove trygt."
                 },
                 "whatWeDo": {
-                    "title": "Hva Vi Gjør",
-                    "content": "Behold Alt på Ett Sted\nLagre alle eiendomsdetaljene dine—adresser, antall rom, kvadratmeter, verdivurderinger—på ett organisert sted. Ikke mer uting gjennom filer eller jakt på dokumenter.\n\nOrganiser Dokumentene Dine\nBilder, inspeksjonsrapporter, garantibrosjyrer og kontrakter hører sammen. Last dem opp en gang, få tilgang til dem når som helst. Det er som å ha et digitalt arkiv som passer i lommen din.\n\nSe Eiendomsene Dine på Kart\nVis eiendomsene dine visuelt med integrert kartlegging. Enten du selger, leier ut eller bare oppbevarer opplysninger, se alt på øyeblikket.\n\nFå Tilgang Når Som Helst, Hvor Som Helst\nBruk Fixora på telefonen din når du er på farten, eller på datamaskinen din når du vil ha en større visning. Eiendomsinformasjonen din er alltid der når du trenger den."
-                },
-                "whoWeServe": {
-                    "title": "Hvem Vi Betjener",
-                    "content": "Huseiere, eiendomsinvestorer og alle som ønsker å holde eiendomsinformasjonen sin organisert og tilgjengelig. Hvis du eier eiendom og vil slutte å administrere filer og begynne å administrere smartere, er Fixora for deg."
+                    "title": "Slik fungerer det",
+                    "content": "Du tar bildene – vi gjør jobben. Du mottar en oversiktlig rapport som rangerer risiko, foreslår tiltak og gir deg en kostnad."
                 },
                 "approach": {
-                    "title": "Vår Tilnærming",
-                    "content": "Vi holder det enkelt. Ingen kompliserte funksjoner du ikke trenger. Bare enkle verktøy som hjelper deg med å organisere eiendomsene dine og finne det du trenger øyeblikkelig.\n\nTilgjengelig på iOS, Android og Web."
+                    "title": "Din trygghet",
+                    "content": "Resultatet er en tryggere bolig, færre uforutsette utgifter og full kontroll på boligens helsetilstand."
                 }
             }
         },
@@ -85,45 +81,46 @@
             "sections": {
                 "whatIs": {
                     "title": "Hva er Fixora?",
-                    "content": "Fixora er en omfattende eiendomsforvaltningsplattform designet for eiendomsmeglere, eiendomsforvaltere og bedriftseiere. Vi forenkler måten du administrerer, dokumenterer og presenterer eiendomsporteføljen din med moderne verktøy bygget for effektivitet."
+                    "content": "Fixora er et digitalt og helautomatisk inspeksjonsverktøy utviklet for å effektivisere samspillet mellom forsikring, håndverkere og boligeiere."
                 },
                 "why": {
-                    "title": "Hvorfor Fixora Finnes",
-                    "content": "Å administrere flere eiendommer på tvers av ulike steder er komplisert. Regneark blir utdatert, dokumenter spredes på tvers av enheter, og presentasjon av eiendommer til interessenter tar for lang tid. Fixora løser dette ved å sentralisere all eiendomsinformasjonen din på én tilgjengelig, sikker plattform."
+                    "title": "Utfordringen",
+                    "content": "Tradisjonell skadehåndtering er tidkrevende og kostbar. Ved å flytte inspeksjonen til mobilen sparer vi bransjen for enorme summer og måneder med ventetid."
                 },
                 "whatWeDo": {
-                    "title": "Hva Vi Gjør",
-                    "content": "Sentralisert Eiendomsforvaltning\nBehold alle eiendomsdetaljer på ett sted. Lagre adresser, spesifikasjoner, verdivurderinger og dokumenter uten å bytte mellom flere verktøy. Hvert teammedlem holder seg synkronisert med sanntidsoppdateringer.\n\nProfesjonell Dokumentasjon\nLast opp og organiser eiendomsdokumenter, sertifikater, inspeksjonsrapporter og kontrakter. Aldri mist viktige filer igjen, og del dem øyeblikkelig med kolleger og klienter.\n\nPlassintelligens\nIntegrert kartlegging viser eiendommers plassering med presise detaljer. Presenter eiendommer profesjonelt til investorer, långivere og partnere med visuell kontekst som betyr noe.\n\nBygget for Team\nAdministrer eiendommer på tvers av organisasjonen din. Flere brukere kan få tilgang til, oppdatere og samarbeide om eiendomsporteføljer basert på deres roller og tillatelser."
-                },
-                "whoWeServe": {
-                    "title": "Hvem Vi Betjener",
-                    "content": "Eiendomsmeglerkontorer, eiendomsforvaltningsselskaper, investeringsfirmaer og porteføljeeiere som trenger pålitelige verktøy for å administrere eiendommer i stor skala."
+                    "title": "Løsningen",
+                    "content": "Vår teknologi gjennomfører digitale sjekker som identifiserer risiko før skaden inntreffer, eller dokumenterer den umiddelbart når den har skjedd."
                 },
                 "approach": {
-                    "title": "Vår Tilnærming",
-                    "content": "Vi tror at eiendomsforvaltning bør være enkel, ikke komplisert. Fixora fjerner administrativ friksjon slik at du kan fokusere på det som betyr noe: å vokse virksomheten din og betjene kundene dine bedre.\n\nTilgjengelig på iOS, Android og Web—arbeid hvor som helst."
+                    "title": "Resultatet",
+                    "content": "Vi ser en reduksjon i skadekostnader på opptil 94 %, eliminerer saksbehandlingstiden og raskere igangsetting av tiltak."
                 }
             }
         }
     },
     "price": {
-        "title": "Prising",
-        "subtitle": "Vær en av våre første 300 kunde og få eksklusiv tilgang til våre spesialpriser. Dette tilbudet er kun tilgjengelig for en begrenset periode.",
+        "title": "Prisplaner",
+        "subtitle": "Bli en av våre første brukere og få eksklusiv lanseringspris.",
         "plans": {
-            "price": "Kun for de første 300 kundene",
-            "tjenester": "Tjenester inkludert i abbonementet",
-            "description": "Få tilgang til flere oppdrag og administrer virksomheten din effektivt med våre prisplaner skreddersydd for alle bedrifter.",
-            "before": "Forhåndsbestillingspris",
-            "priceBefore": "NOK 1499",
-            "after": "Etter lansering",
-            "priceAfter": "NOK 3499",
+            "price": "Tidlig tilgang (Første 300 brukere)",
+            "tjenester": "Inkludert i abonnementet:",
+            "description": "Det er alltid billigere å forebygge enn å reparere.",
+            "before": "Lanseringspris",
+            "priceBefore": "1 499 kr",
+            "after": "Ordinær pris",
+            "priceAfter": "3 499 kr",
             "features": [
-                "Ubegrenset ansatte får håndverkerprofiler",
-                "6 måneder prioritert synlighet",
-                "Inspeksjonsrapporter",
-                "Fast priser for altid",
-                "Superior kundestøtte"
+                "Full digital boligskanning",
+                "AI-drevet skadeanalyse",
+                "Detaljert rapport med risikovurdering",
+                "Digital boligmappe med historikk",
+                "Prioritert kundesupport"
             ]
         }
+    },
+    "footer": {
+        "contactTitle": "Kontaktinfo",
+        "cta": "Bli med på reisen",
+        "ctaSub": "Skriv inn e-posten din for å bli varslet når appen er klar"
     }
 }
