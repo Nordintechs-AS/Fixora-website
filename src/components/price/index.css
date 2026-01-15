@@ -1,7 +1,8 @@
 .priceContainer {
     margin: 10rem auto 4rem;
     padding: 0 2rem;
-    width: min(90rem, 100%);
+    width: 90%;
+    max-width: 50rem;
 }
 
 .priceTitle {
@@ -136,7 +137,6 @@
 
 @media screen and (max-width: 768px) {
     .priceContainer {
-        margin-top: 14rem;
         padding: 0 1.25rem;
     }
 

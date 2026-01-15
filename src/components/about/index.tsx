@@ -20,52 +20,44 @@ export function About() {
         }
     > = {
         privat: {
-            title: t('about.privat.title'),
+            title: t("about.privat.title"),
             sections: [
                 {
-                    title: t('about.privat.sections.whatIs.title'),
-                    content: t('about.privat.sections.whatIs.content'),
+                    title: t("about.privat.sections.whatIs.title"),
+                    content: t("about.privat.sections.whatIs.content"),
                 },
                 {
-                    title: t('about.privat.sections.why.title'),
-                    content: t('about.privat.sections.why.content'),
+                    title: t("about.privat.sections.why.title"),
+                    content: t("about.privat.sections.why.content"),
                 },
                 {
-                    title: t('about.privat.sections.whatWeDo.title'),
-                    content: t('about.privat.sections.whatWeDo.content'),
+                    title: t("about.privat.sections.whatWeDo.title"),
+                    content: t("about.privat.sections.whatWeDo.content"),
                 },
                 {
-                    title: t('about.privat.sections.whoWeServe.title'),
-                    content: t('about.privat.sections.whoWeServe.content'),
-                },
-                {
-                    title: t('about.privat.sections.approach.title'),
-                    content: t('about.privat.sections.approach.content'),
+                    title: t("about.privat.sections.approach.title"),
+                    content: t("about.privat.sections.approach.content"),
                 },
             ],
         },
         bedrift: {
-            title: t('about.bedrift.title'),
+            title: t("about.bedrift.title"),
             sections: [
                 {
-                    title: t('about.bedrift.sections.whatIs.title'),
-                    content: t('about.bedrift.sections.whatIs.content'),
+                    title: t("about.bedrift.sections.whatIs.title"),
+                    content: t("about.bedrift.sections.whatIs.content"),
                 },
                 {
-                    title: t('about.bedrift.sections.why.title'),
-                    content: t('about.bedrift.sections.why.content'),
+                    title: t("about.bedrift.sections.why.title"),
+                    content: t("about.bedrift.sections.why.content"),
                 },
                 {
-                    title: t('about.bedrift.sections.whatWeDo.title'),
-                    content: t('about.bedrift.sections.whatWeDo.content'),
+                    title: t("about.bedrift.sections.whatWeDo.title"),
+                    content: t("about.bedrift.sections.whatWeDo.content"),
                 },
                 {
-                    title: t('about.bedrift.sections.whoWeServe.title'),
-                    content: t('about.bedrift.sections.whoWeServe.content'),
-                },
-                {
-                    title: t('about.bedrift.sections.approach.title'),
-                    content: t('about.bedrift.sections.approach.content'),
+                    title: t("about.bedrift.sections.approach.title"),
+                    content: t("about.bedrift.sections.approach.content"),
                 },
             ],
         },
@@ -85,7 +77,7 @@ export function About() {
             <h1 className="aboutTitle">{currentContent.title}</h1>
 
             <nav className="tableOfContents">
-                <h3 className="tocTitle">{t('about.privat.toc')}</h3>
+                <h3 className="tocTitle">{t("about.privat.toc")}</h3>
                 <ul className="tocList">
                     {currentContent.sections.map((section, index) => (
                         <li key={index} className="tocItem">

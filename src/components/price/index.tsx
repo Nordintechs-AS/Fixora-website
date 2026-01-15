@@ -9,7 +9,7 @@ export function Price() {
 
     return (
         <main className="priceContainer">
-            <h1 className="priceTitle">{t("price.title")}</h1>
+            <h1 className="priceTitle">{t("price.title")}</h1> 
             <p className="priceSubtitle">{t("price.subtitle")}</p>
 
             <div className="pricingCard">
