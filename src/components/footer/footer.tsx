@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { Button } from "../golbal/button";
 
 export function Footer() {
     const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
