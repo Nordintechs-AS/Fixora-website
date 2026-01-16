@@ -53,11 +53,23 @@
     display: none;
 }
 .userTypeButtons {
+    position: relative;
+    display: flex;
     gap: 0.5rem;
     background-color: transparent;
     border-radius: 12rem;
     padding: 0.25rem;
     backdrop-filter: blur(1rem);
+}
+
+.userTypeButtonIndicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--color-gradient-primary);
+    border-radius: 12rem;
+    z-index: 0;
 }
 .navLeftSection {
     display: flex;
@@ -68,6 +80,8 @@
     margin-top: 1rem;
 }
 .userTypeButton {
+    position: relative;
+    z-index: 1;
     padding: 0.4rem 1rem;
     border-radius: 12rem;
     font-size: 0.875rem;
@@ -76,7 +90,7 @@
     background: transparent;
     color: var(--color-text-primary);
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .userTypeButton:hover {
@@ -84,7 +98,6 @@
 }
 
 .userTypeButton.active {
-    background: var(--color-gradient-primary);
     color: var(--color-white);
 }
 
