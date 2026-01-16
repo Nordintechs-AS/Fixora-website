@@ -64,9 +64,9 @@
 
 .userTypeButtonIndicator {
     position: absolute;
-    top: 0;
+    top: 0.25rem;
     left: 0;
-    height: 100%;
+    height: calc(100% - 0.5rem);
     background: var(--color-gradient-primary);
     border-radius: 12rem;
     z-index: 0;
@@ -98,6 +98,7 @@
 }
 
 .userTypeButton.active {
+    background: var(--color-gradient-primary);
     color: var(--color-white);
 }
 
