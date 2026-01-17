@@ -47,7 +47,7 @@
     text-align: center;
 }
 .inputField {
-    height: 2.5rem;
+    height: 3rem;
     padding: 0 1rem;
     font-size: 1rem;
     border: 2px solid var(--color-primary);
@@ -75,6 +75,12 @@
 }
 .offerStatus.error {
     color: #ef4444;
+}
+.offerStatus.invalid {
+    color: #ef4444;
+}
+.inputError {
+    border-color: #ef4444;
 }
 
 @media screen and (max-width: 768px) {

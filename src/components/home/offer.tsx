@@ -90,7 +90,7 @@ export function Offer({ text }: OfferProps) {
                     link=""
                     outline={false}
                     type="submit"
-                    disabled={!isEmailValid || status === "loading"}
+                    disabled={status === "loading"}
                 />
 
                 {showDragConfirm && (
