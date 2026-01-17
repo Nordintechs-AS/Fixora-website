@@ -1,0 +1,53 @@
+.navLinksDesktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    backdrop-filter: blur(1rem);
+    padding: 0rem 1rem;
+    border-radius: 12rem;
+}
+
+.navLink {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--color-text-primary);
+    position: relative;
+    background: linear-gradient(
+        to right,
+        var(--color-primary) 50%,
+        var(--color-text-primary) 50%
+    );
+    background-size: 200% 100%;
+    background-position: right;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.navLink:hover {
+    background-position: left;
+}
+
+.navLink.active {
+    background: var(--color-primary);
+    font-weight: 900;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 770px) {
+    .navLinksDesktop {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .navLink {
+        color: var(--color-text-primary);
+    }
+}

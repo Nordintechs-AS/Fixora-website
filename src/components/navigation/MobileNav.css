@@ -1,0 +1,195 @@
+.menuButton {
+    display: none;
+}
+
+@media screen and (max-width: 770px) {
+    .menuButton {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 2.8rem;
+        height: 2.8rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 1001;
+        padding: 0;
+        backdrop-filter: blur(1rem);
+        border-radius: 0.75rem;
+        transition: all 0.3s ease;
+    }
+
+    .menuButton:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: scale(1.05);
+    }
+
+    .menuButton:focus {
+        outline: none;
+    }
+
+    .menuButton span {
+        display: block;
+        width: 1.2rem;
+        height: 2px;
+        background-color: var(--color-text-primary);
+        border-radius: 2px;
+        transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        position: absolute;
+    }
+
+    .menuButton span:nth-child(1) {
+        top: 0.7rem;
+        width: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .menuButton span:nth-child(2) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .menuButton span:nth-child(3) {
+        bottom: 0.7rem;
+        width: 0.8rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .menuButton.open {
+        background: var(--color-gradient-primary);
+        border-color: transparent;
+    }
+
+    .menuButton.open span {
+        background-color: var(--color-white);
+        width: 1.2rem;
+    }
+
+    .menuButton.open span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .menuButton.open span:nth-child(2) {
+        opacity: 0;
+        transform: translate(-50%, -50%) scaleX(0);
+    }
+
+    .menuButton.open span:nth-child(3) {
+        bottom: 50%;
+        transform: translate(-50%, 50%) rotate(-45deg);
+        width: 1.2rem;
+    }
+
+    .mobileMenuOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100dvh;
+        background: linear-gradient(
+            135deg,
+            var(--color-bg-primary) 0%,
+            rgba(20, 20, 30, 0.98) 100%
+        );
+        backdrop-filter: blur(20px);
+        z-index: 1000;
+        clip-path: circle(0% at calc(100% - 2.5rem) 2.5rem);
+    }
+
+    .mobileMenuContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        padding: 2rem;
+        padding-left: 2.5rem;
+    }
+
+    .mobileNavLinks {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .mobileNavLink {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        text-decoration: none;
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    .mobileNavLinkNumber {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--color-primary);
+        opacity: 0.6;
+        font-family: monospace;
+        letter-spacing: 0.1em;
+    }
+
+    .mobileNavLinkText {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--color-text-primary);
+        position: relative;
+        transition: all 0.3s ease;
+    }
+
+    .mobileNavLink:hover .mobileNavLinkText {
+        color: var(--color-primary);
+        transform: translateX(10px);
+    }
+
+    .mobileNavLink.active .mobileNavLinkText {
+        background: var(--color-gradient-primary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .mobileNavLink.active .mobileNavLinkNumber {
+        opacity: 1;
+    }
+
+    .mobileNavLink::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.25rem;
+        width: 0;
+        height: 2px;
+        background: var(--color-gradient-primary);
+        transition: width 0.3s ease;
+    }
+
+    .mobileNavLink:hover::after {
+        width: 100%;
+    }
+
+    .mobileMenuCta {
+        position: absolute;
+        bottom: 4rem;
+        left: 2.5rem;
+        right: 2.5rem;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    .mobileMenuCta .button {
+        width: 100%;
+        justify-content: center;
+        padding: 1.25rem 2rem;
+        font-size: 1.1rem;
+    }
+}

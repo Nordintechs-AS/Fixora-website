@@ -1,10 +1,11 @@
 import "./index.css";
-import { NavLink, useLocation } from "react-router-dom";
-import { Button } from "../golbal/button";
 import { useState, useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import gsap from "gsap";
 import { useUserTypeStore, type UserType } from "../../store/userTypeStore";
 import { useTranslation } from "react-i18next";
+import { DesktopNav } from "./DesktopNav";
+import { MobileNav } from "./MobileNav";
 
 export function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,13 +13,10 @@ export function Navbar() {
     const location = useLocation();
     const isPricePage = location.pathname === "/price";
     const { t } = useTranslation();
+
     const indicatorRef = useRef<HTMLDivElement>(null);
     const privatButtonRef = useRef<HTMLButtonElement>(null);
     const bedriftButtonRef = useRef<HTMLButtonElement>(null);
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
 
     useEffect(() => {
         if (!indicatorRef.current) return;
@@ -39,6 +37,15 @@ export function Navbar() {
 
     const handleButtonClick = (buttonType: UserType) => {
         setUserType(buttonType);
+    };
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const handleMobileMenuClose = () => {
+        setIsMenuOpen(false);
+        document.body.style.overflow = "";
     };
 
     return (
@@ -71,6 +78,7 @@ export function Navbar() {
                     </div>
                 )}
             </div>
+
             <button
                 className={`menuButton ${isMenuOpen ? "open" : ""}`}
                 aria-label={t("nav.menuLabel")}
@@ -80,31 +88,14 @@ export function Navbar() {
                 <span></span>
                 <span></span>
             </button>
-            <div
-                className="navLinks"
-                style={{ display: isMenuOpen ? "flex" : "" }}
-            >
-                <NavLink to="/" className="navLink">
-                    {t("nav.home")}
-                </NavLink>
-                <NavLink to="/about" className="navLink">
-                    {t("nav.about")}
-                </NavLink>
-                {userType === "bedrift" && (
-                    <NavLink to="/price" className="navLink">
-                        {t("nav.price")}
-                    </NavLink>
-                )}
-                {!isMenuOpen && (
-                    <>
-                        <Button
-                            content={t("nav.preorderButton")}
-                            outline={true}
-                            link="/"
-                        />
-                    </>
-                )}
-            </div>
+
+            <DesktopNav userType={userType} />
+
+            <MobileNav
+                isOpen={isMenuOpen}
+                onClose={handleMobileMenuClose}
+                userType={userType}
+            />
         </nav>
     );
 }

@@ -59,43 +59,47 @@ export function Home() {
         }
     > = {
         privat: {
-            title: t('home.privat.title'),
-            underTitle: t('home.privat.subtitle'),
+            title: t("home.privat.title"),
+            underTitle: t("home.privat.subtitle"),
             benefits: [
                 {
-                    title: t('home.privat.benefits.inspections.title'),
-                    description: t('home.privat.benefits.inspections.description'),
+                    title: t("home.privat.benefits.inspections.title"),
+                    description: t(
+                        "home.privat.benefits.inspections.description"
+                    ),
                     icon: <FaSearch />,
                 },
                 {
-                    title: t('home.privat.benefits.history.title'),
-                    description: t('home.privat.benefits.history.description'),
+                    title: t("home.privat.benefits.history.title"),
+                    description: t("home.privat.benefits.history.description"),
                     icon: <FaClipboardList />,
                 },
                 {
-                    title: t('home.privat.benefits.transparent.title'),
-                    description: t('home.privat.benefits.transparent.description'),
+                    title: t("home.privat.benefits.transparent.title"),
+                    description: t(
+                        "home.privat.benefits.transparent.description"
+                    ),
                     icon: <FaDollarSign />,
                 },
             ],
         },
         bedrift: {
-            title: t('home.bedrift.title'),
-            underTitle: t('home.bedrift.subtitle'),
+            title: t("home.bedrift.title"),
+            underTitle: t("home.bedrift.subtitle"),
             benefits: [
                 {
-                    title: t('home.bedrift.benefits.jobs.title'),
-                    description: t('home.bedrift.benefits.jobs.description'),
+                    title: t("home.bedrift.benefits.jobs.title"),
+                    description: t("home.bedrift.benefits.jobs.description"),
                     icon: <FaChartLine />,
                 },
                 {
-                    title: t('home.bedrift.benefits.admin.title'),
-                    description: t('home.bedrift.benefits.admin.description'),
+                    title: t("home.bedrift.benefits.admin.title"),
+                    description: t("home.bedrift.benefits.admin.description"),
                     icon: <FaBolt />,
                 },
                 {
-                    title: t('home.bedrift.benefits.payment.title'),
-                    description: t('home.bedrift.benefits.payment.description'),
+                    title: t("home.bedrift.benefits.payment.title"),
+                    description: t("home.bedrift.benefits.payment.description"),
                     icon: <FaCreditCard />,
                 },
             ],

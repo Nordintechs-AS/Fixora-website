@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: flex-end;
     overflow: hidden;
-    height: 100vh;
+    height: auto;
+    margin-top: 25rem;
 }
 .title {
     text-align: center;
