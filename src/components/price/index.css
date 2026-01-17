@@ -24,12 +24,17 @@
     border-radius: 1.5rem;
     padding: 3rem;
     background: linear-gradient(
-        350deg,
-        var(--color-overlay-light) 0%,
-        transparent 20%
+        135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.05) 50%,
+        rgba(255, 255, 255, 0.02) 100%
     );
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(1rem);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(1.5rem);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .planTitle {
@@ -138,7 +143,17 @@
 }
 
 :root[data-theme="light"] .pricingCard {
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.03) 0%,
+        rgba(0, 0, 0, 0.02) 50%,
+        rgba(0, 0, 0, 0.01) 100%
+    );
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.05);
 }
 
 :root[data-theme="light"] .priceOption {
