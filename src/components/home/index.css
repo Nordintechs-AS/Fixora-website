@@ -22,6 +22,7 @@
 }
 
 .offerContainer {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,5 +99,6 @@
     .inputField {
         width: 100%;
         min-width: 20rem;
+        max-width: 22rem;
     }
 }

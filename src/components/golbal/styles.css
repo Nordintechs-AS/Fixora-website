@@ -63,3 +63,56 @@
     background-color: var(--color-button);
     color: var(--color-white);
 }
+
+/* Draggg */
+.dragConfirmTrack {
+    position: absolute;
+    width: 100%;
+    min-width: 20rem;
+    max-width: 30rem;
+    bottom: 0;
+    border-radius: 62rem;
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+    user-select: none;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.dragConfirmThumb {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    z-index: 2;
+    transition: background 0.2s ease;
+}
+
+.dragConfirmThumb.confirmed {
+    background: #22c55e;
+}
+
+.dragConfirmText {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #000000;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 48rem) {
+    /* 768px */
+    .dragConfirmTrack {
+        width: 100%;
+        min-width: 21.5rem;
+        max-width: 21.5rem;
+    }
+}

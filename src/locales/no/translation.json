@@ -54,7 +54,8 @@
         "loading": "Sender...",
         "success": "Du er på listen! Vi varsler deg på lanseringsdagen.",
         "exists": "Denne e-postadressen er allerede registrert.",
-        "error": "Noe gikk galt. Vennligst prøv igjen."
+        "error": "Noe gikk galt. Vennligst prøv igjen.",
+        "invalidEmail": "Vennligst skriv inn en gyldig e-postadresse"
     },
     "about": {
         "privat": {

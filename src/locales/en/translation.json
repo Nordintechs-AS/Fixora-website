@@ -55,7 +55,8 @@
         "loading": "Submitting...",
         "success": "You're on the list! We'll notify you on launch day.",
         "exists": "This email is already registered for early access.",
-        "error": "Something went wrong. Please try again."
+        "error": "Something went wrong. Please try again.",
+        "invalidEmail": "Please enter a valid email address"
     },
     "about": {
         "privat": {
