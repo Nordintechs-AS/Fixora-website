@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useRef, useEffect, useCallback } from "react";
 import gsap from "gsap";
 import { useTranslation } from "react-i18next";
+import { ThemeToggle } from "../golbal/ThemeToggle";
 
 interface MobileNavProps {
     isOpen: boolean;
@@ -153,6 +154,9 @@ export function MobileNav({ isOpen, onClose, userType }: MobileNavProps) {
                             </span>
                         </NavLink>
                     )}
+                </div>
+                <div className="mobileThemeToggle">
+                    <ThemeToggle />
                 </div>
             </div>
         </div>

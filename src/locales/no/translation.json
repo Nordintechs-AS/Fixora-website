@@ -13,7 +13,7 @@
     "home": {
         "privat": {
             "title": "Stopp skaden før den koster deg dyrt",
-            "subtitle": "Bruk mobilen til å sikre hjemmet ditt. Fixora identifiserer risiko for brann, vannskader og tekniske feil – før de blir et problem.",
+            "subtitle": "Bruk mobilen til å sikre hjemmet ditt. Fixora identifiserer risiko for brann, vannskader og tekniske feil før de blir et problem.",
             "benefits": {
                 "inspections": {
                     "title": "Forebygg i tide",
@@ -31,7 +31,7 @@
         },
         "bedrift": {
             "title": "Flere relevante oppdrag. Mindre tidstap.",
-            "subtitle": "Vi digitaliserer inspeksjonsprosessen. Få ferdig dokumenterte jobber rett i lomma – helt uten unødvendige befaringer.",
+            "subtitle": "Vi digitaliserer inspeksjonsprosessen. Få ferdig dokumenterte jobber rett i lomma helt uten unødvendige befaringer.",
             "benefits": {
                 "jobs": {
                     "title": "Kvalifiserte oppdrag",
@@ -72,7 +72,7 @@
                 },
                 "whatWeDo": {
                     "title": "Slik fungerer det",
-                    "content": "Du tar bildene – vi gjør jobben. Du mottar en oversiktlig rapport som rangerer risiko, foreslår tiltak og gir deg en kostnad."
+                    "content": "Du tar bildene vi gjør jobben. Du mottar en oversiktlig rapport som rangerer risiko, foreslår tiltak og gir deg en kostnad."
                 },
                 "approach": {
                     "title": "Din trygghet",

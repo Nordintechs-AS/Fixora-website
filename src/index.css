@@ -113,19 +113,28 @@ button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-    :root {
+/* Light theme - applied via data-theme attribute or system preference */
+:root[data-theme="light"],
+:root:not([data-theme]) {
+    @media (prefers-color-scheme: light) {
         --color-text-primary: #0b0914;
         --color-bg-primary: #f9e6f2;
-        color: var(--color-text-primary);
-        background-color: var(--color-bg-primary);
+        --color-overlay-light: rgba(11, 9, 20, 0.1);
     }
-    a:hover {
-        color: var(--color-primary-hover);
-    }
-    button {
-        background-color: var(--color-button);
-    }
+}
+
+:root[data-theme="light"] {
+    --color-text-primary: #0b0914;
+    --color-bg-primary: #f9e6f2;
+    --color-overlay-light: rgba(11, 9, 20, 0.1);
+    --color-border: rgba(0, 0, 0, 0.655);
+}
+
+/* Dark theme - explicit */
+:root[data-theme="dark"] {
+    --color-text-primary: #f9e6f2;
+    --color-bg-primary: #0b0914;
+    --color-overlay-light: rgba(249, 230, 242, 0.1);
 }
 @media screen and (max-width: 768px) {
     .main-content {

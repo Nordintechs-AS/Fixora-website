@@ -12,7 +12,6 @@
     z-index: 1000;
 }
 
-/* Left Section */
 .navLeftSection {
     display: flex;
     align-items: center;
@@ -22,7 +21,6 @@
     margin-top: 1rem;
 }
 
-/* User Type Buttons */
 .userTypeButtons {
     position: relative;
     display: flex;
@@ -31,6 +29,7 @@
     border-radius: 12rem;
     padding: 0.25rem;
     backdrop-filter: blur(1rem);
+    background-color: var(--color-overlay-hover);
 }
 
 .userTypeButtonIndicator {
@@ -68,85 +67,4 @@
 
 .userTypeButton:focus {
     outline: none;
-}
-
-/* Language Switcher */
-.languageSwitcher {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border: none;
-    transition: all 0.3s ease;
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--color-text-primary);
-}
-
-.languageSwitcher:hover {
-    background: var(--color-gradient-primary);
-    color: var(--color-white);
-    transform: scale(1.05);
-}
-
-.languageSwitcher:focus {
-    outline: none;
-}
-
-.languageSwitcher:active {
-    transform: scale(0.95);
-}
-
-.languageDropdown {
-    position: relative;
-}
-
-.languageDropdownMenu {
-    position: absolute;
-    top: calc(100% + 0.5rem);
-    left: 0;
-    background-color: var(--color-bg-secondary, rgba(30, 30, 30, 0.95));
-    backdrop-filter: blur(10px);
-    border-radius: 0.75rem;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    min-width: 7rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    z-index: 1002;
-}
-
-.languageOption {
-    padding: 0.5rem 1rem;
-    border: none;
-    background: transparent;
-    color: var(--color-text-primary);
-    font-size: 0.875rem;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: 0.5rem;
-    transition: all 0.2s ease;
-    text-align: left;
-}
-
-.languageOption:hover {
-    background-color: var(--color-overlay-hover, rgba(255, 255, 255, 0.1));
-}
-
-.languageOption.active {
-    background: var(--color-gradient-primary);
-    color: var(--color-white);
-}
-
-/* Logo */
-@media screen and (max-width: 770px) {
-    .logoImage {
-        margin-left: 1rem;
-    }
 }

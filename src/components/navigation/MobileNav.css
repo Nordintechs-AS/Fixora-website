@@ -94,12 +94,7 @@
         left: 0;
         width: 100%;
         height: 100dvh;
-        background: linear-gradient(
-            135deg,
-            var(--color-bg-primary) 0%,
-            rgba(20, 20, 30, 0.98) 100%
-        );
-        backdrop-filter: blur(20px);
+        backdrop-filter: blur(5rem);
         z-index: 1000;
         clip-path: circle(0% at calc(100% - 2.5rem) 2.5rem);
     }
@@ -191,5 +186,14 @@
         justify-content: center;
         padding: 1.25rem 2rem;
         font-size: 1.1rem;
+    }
+
+    .mobileThemeToggle {
+        margin-top: 2rem;
+    }
+
+    .mobileThemeToggle .themeToggle {
+        width: 48px;
+        height: 48px;
     }
 }

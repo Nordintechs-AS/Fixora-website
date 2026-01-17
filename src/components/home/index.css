@@ -57,6 +57,7 @@
     max-width: 300px;
     background-color: transparent;
     box-sizing: border-box;
+    color: var(--color-dark);
 }
 .inputField:disabled {
     opacity: 0.6;

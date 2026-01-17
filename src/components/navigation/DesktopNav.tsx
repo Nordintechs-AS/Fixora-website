@@ -1,6 +1,7 @@
 import "./DesktopNav.css";
 import { NavLink } from "react-router-dom";
 import { Button } from "../golbal/button";
+import { ThemeToggle } from "../golbal/ThemeToggle";
 import { useTranslation } from "react-i18next";
 
 interface DesktopNavProps {
@@ -24,6 +25,7 @@ export function DesktopNav({ userType }: DesktopNavProps) {
                 </NavLink>
             )}
             <Button content={t("nav.preorderButton")} outline={true} link="/" />
+            <ThemeToggle />
         </div>
     );
 }
