@@ -57,6 +57,24 @@
     background-color: transparent;
     box-sizing: border-box;
 }
+.inputField:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.offerStatus {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.offerStatus.success {
+    color: #22c55e;
+}
+.offerStatus.exists {
+    color: #f59e0b;
+}
+.offerStatus.error {
+    color: #ef4444;
+}
 
 @media screen and (max-width: 768px) {
     .homeContainer {

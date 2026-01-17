@@ -6,9 +6,11 @@ interface ButtonProps {
     content: string;
     link?: string;
     outline?: boolean;
+    type?: "button" | "submit" | "reset";
+    disabled?: boolean;
 }
 
-export function Button({ content, link, outline }: ButtonProps) {
+export function Button({ content, link, outline, type = "button", disabled }: ButtonProps) {
     const shadowRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -31,6 +33,8 @@ export function Button({ content, link, outline }: ButtonProps) {
             <button
                 className={outline === true ? "buttonOutline" : "button"}
                 onClick={() => (window.location.href = link)}
+                type={type}
+                disabled={disabled}
             >
                 {!outline && (
                     <div ref={shadowRef} className="button-shadow"></div>
@@ -40,7 +44,7 @@ export function Button({ content, link, outline }: ButtonProps) {
         );
     }
     return (
-        <button className="button">
+        <button className="button" type={type} disabled={disabled}>
             {!outline && <div ref={shadowRef} className="button-shadow"></div>}
             <span className="button-content">{content}</span>
         </button>

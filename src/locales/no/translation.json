@@ -50,7 +50,11 @@
     },
     "offer": {
         "emailPlaceholder": "Skriv inn din e-postadresse",
-        "button": "Forhåndsbestill"
+        "button": "Forhåndsbestill",
+        "loading": "Sender...",
+        "success": "Du er på listen! Vi varsler deg på lanseringsdagen.",
+        "exists": "Denne e-postadressen er allerede registrert.",
+        "error": "Noe gikk galt. Vennligst prøv igjen."
     },
     "about": {
         "privat": {
